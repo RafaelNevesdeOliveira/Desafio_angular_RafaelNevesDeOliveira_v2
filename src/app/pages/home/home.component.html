@@ -1,0 +1,43 @@
+<nav class="navbar menuTop navbar-dark bg-dark">
+  <h2 class="logo">Avaliação Covid-19</h2>
+  <div class="container-header">
+    <div class="menu-header">
+      <a
+        class=""
+        [class.active]="aba == 'data'"
+        (click)="aba = 'data'"
+        >Dados</a
+      >
+      <a
+        class=""
+        [class.active]="aba == 'data-grid'"
+        (click)="aba = 'data-grid'"
+        >Tabela de dados</a
+      >
+      <a
+        class=""
+        [class.active]="aba == 'charts'"
+        (click)="aba = 'charts'"
+        >Indicadores</a
+      >
+    </div>
+  </div>
+</nav>
+
+<div class="container selection" [ngSwitch]="aba">
+  <!-- Select - Dados -->
+  <div class="data" *ngSwitchDefault="'data'">
+    <app-data></app-data>
+  </div>
+
+  <!-- Data-Grid -->
+  <div class="data-grid" *ngSwitchCase="'data-grid'">
+    <app-data-grid></app-data-grid>
+  </div>
+
+  <!-- Charts -->
+  <div class="charts" *ngSwitchCase="'charts'">
+    <app-charts></app-charts>
+  </div>
+</div>
+

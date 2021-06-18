@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col">
+    <dx-chart [dataSource]="dadosCovid">
+      <dxo-title text="Casos"></dxo-title>
+      <dxi-series
+        argumentField="uf"
+        valueField="cases"
+        name="Casos"
+        type="bar"
+        color="#ffaa66"
+        valueField="cases"
+      >
+      </dxi-series>
+      <dxo-export [enabled]="true"></dxo-export>
+    </dx-chart>
+  </div>
+  <div class="col">
+    <dx-chart [dataSource]="dadosCovid">
+      <dxo-title text="Mortes"></dxo-title>
+      <dxi-series
+        argumentField="uf"
+        valueField="deaths"
+        name="Mortes"
+        type="spline"
+        color="#FF0000"
+      >
+      </dxi-series>
+      <dxo-export [enabled]="true"></dxo-export>
+    </dx-chart>
+  </div>
+  <div class="w-100"></div>
+  <div class="col">
+    <dx-chart [dataSource]="dadosCovid">
+      <dxo-title text="Suspeitos"></dxo-title>
+      <dxi-series
+        argumentField="uf"
+        valueField="suspects"
+        name="Suspeitos"
+        type="bar"
+        color="#0000ff"
+      >
+      </dxi-series>
+      <dxo-export [enabled]="true"></dxo-export>
+    </dx-chart>
+  </div>
+  <div class="col">
+    <dx-chart [dataSource]="dadosCovid">
+      <dxo-title text="Recuperados"></dxo-title>
+      <dxi-series
+        argumentField="uf"
+        valueField="refuses"
+        name="Recuperados"
+        type="line"
+        color="#00FF00"
+      >
+      </dxi-series>
+      <dxo-export [enabled]="true"></dxo-export>
+    </dx-chart>
+  </div>
+</div>

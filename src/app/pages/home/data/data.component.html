@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-sm-12">
+    <select (change)="onChange($event)">
+      <option *ngFor="let dados of dadosCovid">{{ dados.state }}</option>
+    </select>
+
+    <div class="col-sm-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Estado(UF)</th>
+            <th scope="col">Casos</th>
+            <th scope="col">Suspeitos</th>
+            <th scope="col">Mortes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ dadoReal?.state }} - {{ dadoReal?.uf }}</td>
+            <td>{{ dadoReal?.cases }}</td>
+            <td>{{ dadoReal?.suspects }}</td>
+            <td>{{ dadoReal?.deaths }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="col">
+<dx-data-grid
+[dataSource]="dadosCovid"
+[showBorders]="true"
+[showColumnLines]="true"
+[showRowLines]="true"
+[remoteOperations]="false"
+[allowColumnReordering]="true"
+[rowAlternationEnabled]="true"
+>
+<dxo-filter-row [visible]="true"></dxo-filter-row>
+<dxo-header-filter [visible]="true"></dxo-header-filter>
+<dxi-column caption="Estado" dataField="state" dataType="stringLength"></dxi-column>
+<dxi-column caption="Casos" dataField="cases" groupInterval="100"></dxi-column>
+<dxi-column caption="Mortes" dataField="deaths" groupInterval="100"></dxi-column>
+<dxi-column caption="Suspeitos" dataField="suspects" groupInterval="100"></dxi-column>
+<dxi-column caption="Recuperados" dataField="refuses" groupInterval="100"></dxi-column>
+<dxi-column caption="Atualizado" dataField="datetime" dataType="date"></dxi-column>
+<dxo-grouping [autoExpandAll]="true"></dxo-grouping>
+<dxo-paging [pageSize]="8"></dxo-paging>
+</dx-data-grid>
+</div>
