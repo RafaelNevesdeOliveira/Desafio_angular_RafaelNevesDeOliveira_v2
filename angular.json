@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "desafioDataway": {
+    "Desafio_angular_RafaelNevesDeOliveira_v2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "desafioDataway:build"
+            "browserTarget": "Desafio_angular_RafaelNevesDeOliveira_v2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "desafioDataway:build:production"
+              "browserTarget": "Desafio_angular_RafaelNevesDeOliveira_v2:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "desafioDataway:build"
+            "browserTarget": "Desafio_angular_RafaelNevesDeOliveira_v2:build"
           }
         },
         "test": {
@@ -119,16 +119,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "desafioDataway:serve"
+            "devServerTarget": "Desafio_angular_RafaelNevesDeOliveira_v2:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "desafioDataway:serve:production"
+              "devServerTarget": "Desafio_angular_RafaelNevesDeOliveira_v2:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "desafioDataway"
+  "defaultProject": "Desafio_angular_RafaelNevesDeOliveira_v2"
 }

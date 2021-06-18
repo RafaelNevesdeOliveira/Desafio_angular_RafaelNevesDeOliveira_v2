@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', async () => {
     await page.navigateTo();
-    expect(await page.getTitleText()).toEqual('desafioDataway app is running!');
+    expect(await page.getTitleText()).toEqual('Desafio_angular_RafaelNevesDeOliveira_v2 app is running!');
   });
 
   afterEach(async () => {

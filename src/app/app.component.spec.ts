@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'desafioDataway'`, () => {
+  it(`should have as title 'Desafio_angular_RafaelNevesDeOliveira_v2'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('desafioDataway');
+    expect(app.title).toEqual('Desafio_angular_RafaelNevesDeOliveira_v2');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('desafioDataway app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Desafio_angular_RafaelNevesDeOliveira_v2 app is running!');
   });
 });

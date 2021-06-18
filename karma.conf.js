@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/desafioDataway'),
+      dir: require('path').join(__dirname, './coverage/Desafio_angular_RafaelNevesDeOliveira_v2'),
       subdir: '.',
       reporters: [
         { type: 'html' },
