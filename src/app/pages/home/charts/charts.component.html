@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-    <dx-chart [dataSource]="dadosCovid">
+    <dx-chart [dataSource]="covidData">
       <dxo-title text="Casos"></dxo-title>
       <dxi-series
         argumentField="uf"
@@ -15,7 +15,7 @@
     </dx-chart>
   </div>
   <div class="col">
-    <dx-chart [dataSource]="dadosCovid">
+    <dx-chart [dataSource]="covidData">
       <dxo-title text="Mortes"></dxo-title>
       <dxi-series
         argumentField="uf"
@@ -30,7 +30,7 @@
   </div>
   <div class="w-100"></div>
   <div class="col">
-    <dx-chart [dataSource]="dadosCovid">
+    <dx-chart [dataSource]="covidData">
       <dxo-title text="Suspeitos"></dxo-title>
       <dxi-series
         argumentField="uf"
@@ -44,7 +44,7 @@
     </dx-chart>
   </div>
   <div class="col">
-    <dx-chart [dataSource]="dadosCovid">
+    <dx-chart [dataSource]="covidData">
       <dxo-title text="Recuperados"></dxo-title>
       <dxi-series
         argumentField="uf"

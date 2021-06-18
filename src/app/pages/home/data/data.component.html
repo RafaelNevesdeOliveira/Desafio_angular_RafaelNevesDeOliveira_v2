@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-sm-12">
     <select (change)="onChange($event)">
-      <option *ngFor="let dados of dadosCovid">{{ dados.state }}</option>
+      <option *ngFor="let dados of covidData">{{ dados.state }}</option>
     </select>
 
     <div class="col-sm-12">
@@ -16,10 +16,10 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{ dadoReal?.state }} - {{ dadoReal?.uf }}</td>
-            <td>{{ dadoReal?.cases }}</td>
-            <td>{{ dadoReal?.suspects }}</td>
-            <td>{{ dadoReal?.deaths }}</td>
+            <td>{{ realData?.state }} - {{ realData?.uf }}</td>
+            <td>{{ realData?.cases }}</td>
+            <td>{{ realData?.suspects }}</td>
+            <td>{{ realData?.deaths }}</td>
           </tr>
         </tbody>
       </table>

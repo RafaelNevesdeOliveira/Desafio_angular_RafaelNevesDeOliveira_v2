@@ -1,7 +1,35 @@
 # Desafio_angular_RafaelNevesDeOliveira_v2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+# Introduction
 
+This pages was created to reach the goal of consume a API and present using DevExtreme Lib., like a Data-Grid and Charts.
+Tecnologied used:
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Angular</li>
+<li>Typescript</li>
+</ul>
+
+Library:
+<ul>
+<li>DevExtreme Lib.</li>
+</ul>
+<hr>
+
+![image](/src/assets/data.png)
+<hr>
+
+![image](/src/assets/data-grid.png)
+<hr>
+
+![image](/src/assets/charts.png)
+
+## Data Source - API
+
+As reference to consume data, I choose to use the follow API:
+[API](https://covid19-brazil-api.vercel.app/api/report/v1)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

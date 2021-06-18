@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { HomeService } from '../../services/home.service';
 import { Covid } from '../models/states';
 
@@ -10,8 +10,8 @@ import { Covid } from '../models/states';
 export class ChartsComponent implements OnInit {
   constructor(private homeService: HomeService) {}
 
-  dadosCovid: Array<Covid> = [];
-  dadoReal: any;
+  covidData: Array<Covid> = [];
+  realData: any;
 
   ngOnInit() {
     this.getCases();
@@ -20,15 +20,15 @@ export class ChartsComponent implements OnInit {
   getCases() {
     this.homeService.getCases().subscribe((data) => {
       let obj: any = data;
-      this.dadosCovid = obj.data;
-      this.dadoReal = this.dadosCovid.find(
-        (x) => x.state == this.dadosCovid[0].state
+      this.covidData = obj.data;
+      this.realData = this.covidData.find(
+        (x) => x.state == this.covidData[0].state
       );
     });
   }
 
   onChange(deviceValue: any) {
-    this.dadoReal = this.dadosCovid.find(
+    this.realData = this.covidData.find(
       (x) => x.state == deviceValue.target.value
     );
   }
