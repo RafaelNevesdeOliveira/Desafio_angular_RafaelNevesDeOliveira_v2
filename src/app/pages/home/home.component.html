@@ -1,11 +1,13 @@
-<nav class="navbar menuTop navbar-dark bg-dark">
-  <h2 class="logo">Dados Covid-19</h2>
+<nav class="navbar menuTop navbar-light bg-light">
+  <div class="logo">
+    <b class="logo1">CORONAVÍRUS</b>
+    <b class="logo2">/</b>
+    <b class="logo3">/</b>
+    <b class="logo4">BRASIL</b>
+  </div>
   <div class="container-header">
     <div class="menu-header">
-      <a
-        class=""
-        [class.active]="aba == 'data'"
-        (click)="aba = 'data'"
+      <a class="" [class.active]="aba == 'data'" (click)="aba = 'data'"
         >Dados</a
       >
       <a
@@ -14,10 +16,7 @@
         (click)="aba = 'data-grid'"
         >Tabela de dados</a
       >
-      <a
-        class=""
-        [class.active]="aba == 'charts'"
-        (click)="aba = 'charts'"
+      <a class="" [class.active]="aba == 'charts'" (click)="aba = 'charts'"
         >Indicadores</a
       >
     </div>
@@ -27,17 +26,19 @@
 <div class="container selection" [ngSwitch]="aba">
   <!-- Select - Dados -->
   <div class="data" *ngSwitchDefault="'data'">
-    <app-data ></app-data>
+    <h3 class="col-sm-12">Dados por seleção de Estado</h3>
+    <app-data></app-data>
   </div>
 
   <!-- Data-Grid -->
   <div class="data-grid" *ngSwitchCase="'data-grid'">
+    <h3 class="col-sm-12">Datagrid</h3>
     <app-data-grid></app-data-grid>
   </div>
 
   <!-- Charts -->
   <div class="charts" *ngSwitchCase="'charts'">
+    <h3 class="col-sm-12">Indicadores</h3>
     <app-charts></app-charts>
   </div>
 </div>
-

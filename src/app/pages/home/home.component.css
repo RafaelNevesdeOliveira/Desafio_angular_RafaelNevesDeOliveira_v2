@@ -3,9 +3,37 @@
 }
 
 .logo{
-  color: #03adbd;
+  display: flex;
   padding-left: 20px;
+  color: #193148;
+  line-height: 22px;
+  font-weight: 700;
+  font-size: 24.59px;
+  justify-content: space-between;
+  font-family: "Circular Std",sans-serif;
 }
+
+.logo1{
+  font-weight: 700;
+}
+.logo4{
+  font-weight: 300;
+}
+
+.logo2{
+  margin-left: 8px;
+  color: green;
+}
+
+.logo3{
+  margin-right: 8px;
+  color: #ffff00;
+}
+
+.menuTop{
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 
 .container-header{
   height: 70px;
@@ -21,19 +49,21 @@
   margin-right: 8px;
   cursor: pointer;
   font-family: arial;
-  color:rgba(95, 119, 139);
+  color:#193148;
   text-transform: uppercase;
   font-weight: 500;
-  text-shadow: 0.1em 0.1em 0.05em rgb(181, 182, 184, 0.5);
 }
 
 .menu-header a.active{
   font-weight: bold;
-  color: #03adbd;
+  color: #0a0a0a;
+  border-bottom: 3px solid #008000;
+  border-radius: 5px;
+
 }
 
 .menu-header a:hover{
-  color: #43d9e7;
+  color: #b4bbbb;
 }
 
 .selection{
