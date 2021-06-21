@@ -120,10 +120,18 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     {
-        path: 'home',
-        loadChildren: () => __webpack_require__.e(/*! import() | app-pages-home-home-module */ "app-pages-home-home-module").then(__webpack_require__.bind(null, /*! ../app/pages/home/home.module */ "99Un")).then((m) => m.HomeModule),
+        path: '',
+        loadChildren: () => Promise.all(/*! import() | app-pages-home-home-module */[__webpack_require__.e("default~app-pages-home-charts-charts-component~app-pages-home-data-grid-data-grid-component~app-page~eadf15cf"), __webpack_require__.e("common"), __webpack_require__.e("app-pages-home-home-module")]).then(__webpack_require__.bind(null, /*! ../app/pages/home/home.module */ "99Un")).then((m) => m.HomeModule),
     },
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '', redirectTo: '/', pathMatch: 'full' },
+    {
+        path: 'data-grid',
+        loadChildren: () => Promise.all(/*! import() | app-pages-home-data-grid-data-grid-component */[__webpack_require__.e("default~app-pages-home-charts-charts-component~app-pages-home-data-grid-data-grid-component~app-page~eadf15cf"), __webpack_require__.e("common")]).then(__webpack_require__.bind(null, /*! ../app/pages/home/data-grid/data-grid.component */ "TDbv")).then((m) => m.DataGridComponent),
+    },
+    {
+        path: 'charts',
+        loadChildren: () => Promise.all(/*! import() | app-pages-home-charts-charts-component */[__webpack_require__.e("default~app-pages-home-charts-charts-component~app-pages-home-data-grid-data-grid-component~app-page~eadf15cf"), __webpack_require__.e("common")]).then(__webpack_require__.bind(null, /*! ../app/pages/home/charts/charts.component */ "cBWn")).then((m) => m.ChartsComponent),
+    },
 ];
 class AppRoutingModule {
 }
