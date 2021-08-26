@@ -18,6 +18,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('../app/pages/home/charts/charts.component').then((m) => m.ChartsComponent),
   },
+  {
+    path: 'diagram',
+    loadChildren: () =>
+      import('../app/pages/home/diagram/diagram/diagram.component').then((m) => m.DiagramComponent),
+  },
 ];
 
 @NgModule({

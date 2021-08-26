@@ -19,6 +19,9 @@
       <a class="" [class.active]="aba == 'charts'" (click)="aba = 'charts'"
         >Indicadores</a
       >
+      <a class="" [class.active]="aba == 'diagram'" (click)="aba = 'diagram'"
+        >Diagrama</a
+      >
     </div>
   </div>
 </nav>
@@ -40,5 +43,10 @@
   <div class="charts" *ngSwitchCase="'charts'">
     <h3 class="col-sm-12">Indicadores</h3>
     <app-charts></app-charts>
+  </div>
+  <!-- DIAGRAM -->
+  <div class="diagram" *ngSwitchCase="'diagram'">
+    <h3 class="col-sm-12">Diagrama</h3>
+    <app-diagram></app-diagram>
   </div>
 </div>
